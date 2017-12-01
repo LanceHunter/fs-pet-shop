@@ -9,7 +9,7 @@ let petObj = {};
 app.disable('x-powered-by');
 app.use(bodyParser.json());
 
-var filterInt = function(value) {
+const filterInt = function(value) {
     if (/^(\-|\+)?([0-9]+|Infinity)$/.test(value))
       return Number(value);
     return NaN;
